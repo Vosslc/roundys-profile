@@ -21,10 +21,11 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  .skill-card {
-    height: 25vh;
-    width: 15vw;
+  p {
+    font-family: 'Orbitron', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    font-size: 30px;
+    color: black;
   }
   .img-js {
     padding-top: 40px;
@@ -36,6 +37,7 @@
     .img-js-origin {
       height: 20vh;
       width: 10vw;
+      
     }
   }
 }
@@ -43,6 +45,6 @@
 @media (max-width: 768px) {
   .img-js-origin {
     height: 25vh;
-    width: 50vw;
+    width: 35vw;
   }
 }
