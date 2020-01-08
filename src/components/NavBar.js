@@ -52,9 +52,9 @@ class NavBar extends React.Component {
               <MDBNavbarToggler onClick={this.onClick} />
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav style={navFont} left>
-                  <MDBNavItem active>
+                  {/* <MDBNavItem active>
                     <MDBNavLink to="#">Home</MDBNavLink>
-                  </MDBNavItem>
+                  </MDBNavItem> */}
                   <MDBNavItem>
                     {/* <AnchorLink
                       // offset="100"
@@ -76,6 +76,9 @@ class NavBar extends React.Component {
                       </MDBNavLink>
                     </a>
                     {/* </AnchorLink> */}
+                  </MDBNavItem>
+                  <MDBNavItem>
+                    <MDBNavLink to="#">Skills</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
                     <MDBNavLink to="#">Portfolio</MDBNavLink>

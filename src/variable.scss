@@ -1,0 +1,64 @@
+@mixin scrollbar {
+  ::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e0b803;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #666666;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #666666;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  @media (max-width: 768px) {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    ::-webkit-scrollbar-button {
+      display: none;
+    }
+    ::-webkit-scrollbar-thumb {
+      display: none;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      display: none;
+    }
+    ::-webkit-scrollbar-thumb:active {
+      display: none;
+    }
+    ::-webkit-scrollbar-track {
+      display: none;
+    }
+    ::-webkit-scrollbar-track:hover {
+      display: none;
+    }
+    ::-webkit-scrollbar-track:active {
+      display: none;
+    }
+    ::-webkit-scrollbar-corner {
+      display: none;
+    }
+  }
+}
