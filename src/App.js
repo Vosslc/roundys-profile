@@ -3,6 +3,7 @@ import "./App.scss";
 import NavBar from "./components/NavBar";
 import Header from "./components/Header/Header";
 import About from "./components/About/About"
+import Skills from "./components/Skills/Skills"
 // import routes from "./routes";
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       <NavBar />
       <Header />
-      <About />
+      {/* <About /> */}
+      <Skills />
     </div>
   );
 }

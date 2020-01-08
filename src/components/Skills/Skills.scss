@@ -1,0 +1,48 @@
+#about {
+  // background-color: black;
+  color: white;
+  .about-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    .about-btn {
+    }
+  }
+}
+.card-container {
+  padding-bottom: 50px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  .skill-card {
+    height: 25vh;
+    width: 15vw;
+    text-align: center;
+  }
+  .img-js {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  @media (min-width: 768px)  {
+    
+    .img-js-origin {
+      height: 20vh;
+      width: 10vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .img-js-origin {
+    height: 25vh;
+    width: 50vw;
+  }
+}
