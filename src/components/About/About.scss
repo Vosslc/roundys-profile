@@ -1,24 +1,24 @@
-.about {
-  // background-color: #FFFBFA;
-  background-color: #fef4ee;
-  // color: white;
-  padding-bottom: 85px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  .about-btn-container {
+@media (min-width: 768px) {
+  .about {
+    // background-color: #FFFBFA;
+    background-color: #fef4ee;
+    // color: white;
+    padding-bottom: 85px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    text-decoration: none;
-    .about-btn {
-      // color: #2c333f;
+    flex-direction: column;
+    .about-btn-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+      text-decoration: none;
+      .about-btn {
+        // color: #2c333f;
+      }
     }
-  }
-  @media (min-width: 768px) {
     .about-container {
       display: flex;
       flex-direction: row;
@@ -27,10 +27,9 @@
       align-items: center;
       align-content: stretch;
       text-decoration: none;
-      padding-right: 450px;
+      padding-right: 540px;
 
       .about-card {
-        
         width: 50vw;
         text-decoration: none;
         display: flex;
@@ -44,7 +43,6 @@
           padding: 15px;
           padding-right: 45px;
           width: 20vw;
-          
         }
       }
       .roundy-fam {
@@ -55,23 +53,40 @@
     }
   }
 
-  @media (max-width: 768px) {
-    #about {
-      padding-bottom: 0px;
-    }
-    .img-js-origin {
-      height: 25vh;
-      width: 35vw;
-    }
-    .roundy-fam {
-      height: 50vh;
-      width: 93vw;
-    }
-    .about-text {
-      font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 14px;
-      color: black;
-      text-align: center;
-    }
-  }
 }
+    @media (max-width: 768px) {
+      .about {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fef4ee;
+        padding-bottom: 0px;
+
+        .about-btn-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          align-content: stretch;
+          text-decoration: none;
+          .about-btn {
+            // color: #2c333f;
+          }
+        }
+      }
+      .img-js-origin {
+        height: 25vh;
+        width: 35vw;
+      }
+      .roundy-fam {
+        height: 50vh;
+        width: 93vw;
+      }
+      .about-text {
+        font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        color: black;
+        text-align: center;
+      }
+    }

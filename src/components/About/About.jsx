@@ -5,7 +5,7 @@ import {
   MDBNavLink,
   MDBCardImage,
   MDBCard,
-  MDBCardBody,
+  // MDBCardBody,
   MDBCardTitle,
   MDBCardText,
   MDBCol
@@ -13,6 +13,13 @@ import {
 import roundyFam from "./assets/roundyFam.jpeg";
 import { animateScroll as scroll } from "react-scroll";
 
+/**
+ *
+ *
+ * @export
+ * @class About
+ * @extends {Component}
+ */
 export class About extends Component {
   render() {
     const font = {
@@ -39,7 +46,7 @@ export class About extends Component {
               <MDBNavLink
                 activeClass="active"
                 className="#about"
-                to="about"
+                to="/"
                 spy={true}
                 smooth={true}
                 duration={500}
@@ -50,7 +57,7 @@ export class About extends Component {
             </a>
           </button>
         </div>
-        <div className="about-container">
+        <div className="about-container" id="about">
           <MDBCol md="3">
             <MDBCard className="about-card shadow-box-example">
               {/* <MDBCardBody className="meetup-content"> */}

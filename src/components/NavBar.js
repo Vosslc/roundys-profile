@@ -1,4 +1,5 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 import {
   MDBNavbar,
   MDBNavbarBrand,
@@ -16,13 +17,29 @@ import { BrowserRouter as Router } from "react-router-dom";
 import code from "../assets/nr1.png";
 import { animateScroll as scroll } from "react-scroll";
 
+/**
+ *
+ *
+ * @class NavBar
+ * @extends {React.Component}
+ */
 class NavBar extends React.Component {
+  /**
+   *Creates an instance of NavBar.
+   * @param {*} props
+   * @memberof NavBar
+   */
   constructor(props) {
     super(props);
     this.state = {
       collapse: false
     };
     this.onClick = this.onClick.bind(this);
+    this.scrollToTop = this.scrollToTop.bind(this);
+  }
+
+  scrollToTop() {
+    scroll.scrollToTop();
   }
 
   onClick() {
@@ -31,6 +48,12 @@ class NavBar extends React.Component {
     });
   }
 
+  /**
+   *
+   *
+   * @returns
+   * @memberof NavBar
+   */
   render() {
     const black = { backgroundColor: "#2D3340" };
     const logo = {
@@ -45,10 +68,12 @@ class NavBar extends React.Component {
         <Router>
           <header>
             <MDBNavbar style={black} dark expand="md" scrolling fixed="top">
-              <MDBNavbarBrand href="/">
+              {/* <MDBNavbarBrand href="/"> */}
                 {/* <strong style={roundy}>Roundy</strong> */}
-                <img style={logo} src={code} alt="code logo" />
-              </MDBNavbarBrand>
+                <a href="#about" onClick={() => this.scrollToTop(500)}>
+                  <img style={logo} src={code} alt="code logo" />
+                </a>
+              {/* </MDBNavbarBrand> */}
               <MDBNavbarToggler onClick={this.onClick} />
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav style={navFont} left>
@@ -62,21 +87,22 @@ class NavBar extends React.Component {
                       // style={{ color: "white" }}
                       // className="pl-3"
                     > */}
-                    <a href="#about" onClick={() => scroll.scrollMore(500)}>
+                    {/* <a href="#about" onClick={() => scroll.scrollMore(500)}> */}
+                    {/* <a href="#about"> */}
                       <MDBNavLink
                         activeClass="active"
-                        className="#about"
-                        to="about"
-                        spy={true}
-                        smooth={true}
-                        duration={500}
+                        // className="#about"
+                        to="/"
+                        // spy={true}
+                        // smooth={true}
+                        // duration={500}
                       >
                         {" "}
                         About{" "}
                       </MDBNavLink>
-                    </a>
-                    {/* </AnchorLink> */}
+                      {/* </a> */}
                   </MDBNavItem>
+                  
                   <MDBNavItem>
                     <MDBNavLink to="#">Skills</MDBNavLink>
                   </MDBNavItem>
