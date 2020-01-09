@@ -26,38 +26,38 @@ export default class Skills extends Component {
     return (
       <div id="skills">
         <div className="skills-btn-container">
-          <button type="button" class="btn btn-link about-btn">
-            <a
+          <button type="button" className="btn btn-link about-btn">
+            {/* <a
               className="about-scroll"
               href="#about"
-              onClick={() => scroll.scrollMore(900)}
-            >
-              <MDBIcon className="fas fa-camera fa-3x" icon="chevron-down" />
+              
+            > */}
               <MDBNavLink
-                activeClass="active"
                 className="#about"
                 to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
+                // spy={true}
+                // smooth={true}
+                // duration={500}
+                onClick={() => scroll.scrollMore(900)}
               >
+              <MDBIcon className="fas fa-camera fa-3x" icon="chevron-down" />
                 {" "}
               </MDBNavLink>
-            </a>
+            {/* </a> */}
           </button>
         </div>
         <div className="skills-header">
           <p style={font}>SKILLS</p>{" "}
         </div>
         
-        <div className="skills-container" waves>
+        <div className="skills-container">
           <MDBContainer>
             <MDBRow>
               {Proficiencies.map(function(element) {
                 return (
                   <MDBCol md="3"> 
-                    <Link>
-                      <ScrollAnimation animateIn="zoomIn" delay=".1s">
+                    {/* <Link> */}
+                      <ScrollAnimation animateIn="zoomIn">
                         <a className="img-js" href="#/us">
                           <MDBCardImage
                             className="img-js-origin img-fluid"
@@ -67,7 +67,7 @@ export default class Skills extends Component {
                         </a>
                         <p>{element.name}</p>
                       </ScrollAnimation>
-                    </Link>
+                    {/* </Link> */}
                   </MDBCol>
                 );
               })}

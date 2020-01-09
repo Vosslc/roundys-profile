@@ -1,0 +1,69 @@
+@media (min-width: 768px) {
+  .nav-bar-container {
+    a {
+      color: #e9e9e9;
+      text-decoration: none;
+      // font-size: large;
+    }
+
+    a:hover {
+      color: #c63800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .about-nav-btn {
+      padding-top: 8px;
+      padding-right: 15px;
+      padding-left: 15px;
+      color: inherit;
+    }
+    .skills-nav-btn {
+      padding-top: 8px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .portfolio-nav-btn {
+      padding-top: 8px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar-container {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: nowrap;
+    // justify-content: space-around;
+    // align-items: center;
+    // align-content: stretch;
+    a {
+      color: #e9e9e9;
+      text-decoration: none;
+      // font-size: large;
+    }
+
+    a:hover {
+      color: #c63800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    // .about-nav-btn {
+    //   padding-top: 8px;
+    //   padding-right: 15px;
+    //   padding-left: 15px;
+    //   color: inherit;
+    // }
+    // .skills-nav-btn {
+    //   padding-top: 8px;
+    //   padding-right: 15px;
+    //   padding-left: 15px;
+    // }
+    // .portfolio-nav-btn {
+    //   padding-top: 8px;
+    //   padding-right: 15px;
+    //   padding-left: 15px;
+    // }
+  }
+}

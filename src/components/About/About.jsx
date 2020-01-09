@@ -30,55 +30,45 @@ export class About extends Component {
     const font1 = {
       fontFamily: "Orbitron",
       fontSize: 25,
-      color: "#2C333F",
+      color: "#2C333F"
       // fontWeight: 'bold'
     };
     return (
-      <div className="about">
+      <div className="about" id="about">
         <div className="about-btn-container">
-          <button type="button" class="btn btn-link about-btn">
-            <a
-              className="about-scroll"
-              href="#about"
+          <button type="button" className="btn btn-link about-btn">
+            <MDBNavLink
+              className="#about about-scroll"
+              to="/"
               onClick={() => scroll.scrollMore(625)}
             >
-              <MDBIcon className="fas fa-camera fa-3x" icon="chevron-down" />
-              <MDBNavLink
-                activeClass="active"
-                className="#about"
-                to="/"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                {" "}
-                <p style={font}>ROUNDY</p>{" "}
-              </MDBNavLink>
-            </a>
+              <MDBIcon className="fas fa-camera fa-3x" icon="chevron-down" />{" "}
+              <p style={font}>ROUNDY</p>{" "}
+            </MDBNavLink>
           </button>
         </div>
-        <div className="about-container" id="about">
+        <div className="about-container">
           <MDBCol md="3">
+                <h4
+                  className="text-uppercase font-weight-bolder"
+                  style={font1}
+                >
+                  About.Me
+                </h4>
             <MDBCard className="about-card shadow-box-example">
-              {/* <MDBCardBody className="meetup-content"> */}
-                
-                <MDBCardText className="about-text">
-                <MDBCardTitle className="text-uppercase font-weight-bolder" style={font1}>About.Me</MDBCardTitle>
-                  Born in Seattle Washington raised in Salt Lake City Utah.
-                  Wether it’s rock climbing to marry the love of my
-                  life, brewing and collaborating world class craft beers, or
-                  learning a new programing language. I continuously strive to
-                  build on my life resume
-                </MDBCardText>
-            <MDBCardImage
-              className="roundy-fam shadow-box-example"
-              src={roundyFam}
+              <MDBCardText className="about-text">
+                Born in Seattle Washington raised in Salt Lake City Utah. Whether
+                it’s rock climbing to marry the love of my life, brewing and
+                collaborating world class craft beers, or learning a new
+                programing language. I continuously strive to build on my life
+                resume
+              </MDBCardText>
+              <MDBCardImage
+                className="roundy-fam shadow-box-example"
+                src={roundyFam}
               ></MDBCardImage>
-              {/* </MDBCardBody> */}
             </MDBCard>
-          
-            </MDBCol>
-          
+          </MDBCol>
         </div>
       </div>
     );
