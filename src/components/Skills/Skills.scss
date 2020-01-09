@@ -1,7 +1,8 @@
-#about {
-  // background-color: black;
-  color: white;
-  .about-btn-container {
+#skills {
+  background-color: ghostwhite;
+  // color: white;
+
+  .skills-btn-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -12,7 +13,20 @@
     }
   }
 }
-.card-container {
+.skills-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  p {
+    font-family: "Orbitron", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    color: black;
+  }
+}
+.skills-container {
   padding-bottom: 50px;
 
   display: flex;
@@ -21,23 +35,23 @@
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  p {
-    font-family: 'Orbitron', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 30px;
-    color: black;
-  }
   .img-js {
     padding-top: 40px;
     display: flex;
     justify-content: center;
   }
-  @media (min-width: 768px)  {
-    
+
+  @media (min-width: 768px) {
     .img-js-origin {
       height: 20vh;
       width: 10vw;
       
+    }
+    p {
+      font-family: "Orbitron", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 30px;
+      color: black;
+      text-align: center;
     }
   }
 }
@@ -46,5 +60,11 @@
   .img-js-origin {
     height: 25vh;
     width: 35vw;
+  }
+  p {
+    font-family: "Orbitron", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
   }
 }
