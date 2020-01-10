@@ -49,19 +49,20 @@ export class About extends Component {
         </div>
         <div className="about-container">
           <MDBCol md="3">
-                <h4
-                  className="text-uppercase font-weight-bolder"
-                  style={font1}
-                >
-                  About.Me
-                </h4>
+            <h4 className="text-uppercase font-weight-bolder" style={font1}>
+              About.Me
+            </h4>
             <MDBCard className="about-card shadow-box-example">
               <MDBCardText className="about-text">
-                Born in Seattle Washington raised in Salt Lake City Utah. Whether
-                it’s rock climbing to marry the love of my life, brewing and
+                Born in Seattle Washington raised in Salt Lake City Utah.
+                Whether it’s rock climbing to marry the love of my life, welding
+                on a oil field in the frozen tundra of North Dekota, brewing and
                 collaborating world class craft beers, or learning a new
                 programing language. I continuously strive to build on my life
-                resume
+                resume. In 2019, I put my brewing boots aside, to attend a 13
+                week Full Stack Web Dev program, from Dev Mountain. I look
+                forward to this new chapter in my life. To continually learning,
+                developing, and build on my life resume.
               </MDBCardText>
               <MDBCardImage
                 className="roundy-fam shadow-box-example"
