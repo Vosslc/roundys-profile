@@ -9,10 +9,10 @@ import {
   MDBMask,
   MDBContainer
 } from "mdbreact";
-import RegSC from "./assets/SC.png";
-import SCHome from "./assets/SCHome.jpeg";
+// import RegSC from "./assets/SC.png";
+// import SCHome from "./assets/SCHome.jpeg";
 import SCProfile from "./assets/SCProfile.png";
-import mobileReg from "./assets/mobileReg.png";
+// import mobileReg from "./assets/mobileReg.png";
 
 const ProjectCarouselPage = () => {
   const font1 = {
@@ -29,23 +29,27 @@ const ProjectCarouselPage = () => {
   };
   return (
     <div id="personal-dev-img">
-      <h4 className="project-title text-uppercase font-weight-bolder" style={font1}>
+      <h4
+        className="project-title text-uppercase font-weight-bolder"
+        style={font1}
+      >
         Projects
       </h4>
 
-      <MDBContainer project-carousel>
+      <MDBContainer>
         <MDBCarousel
           activeItem={1}
-          length={4}
+          length={3}
           showControls={true}
           showIndicators={true}
           className="z-depth-1"
+          className="project-carousel"
         >
           <MDBCarouselInner>
-            <MDBCarouselItem itemId="1">
+            <MDBCarouselItem itemId="1" className="item1">
               <MDBView>
-                <img className="d-block w-100" src={RegSC} alt="First slide" />
-                {/* <MDBMask overlay="black-light" /> */}
+                <div className="item1-img" alt="First slide"></div>
+
                 <MDBMask overlay="black-strong" />
               </MDBView>
               <MDBCarouselCaption>
@@ -59,13 +63,14 @@ const ProjectCarouselPage = () => {
                 </a>
               </MDBCarouselCaption>
             </MDBCarouselItem>
-            <MDBCarouselItem itemId="2">
+            <MDBCarouselItem itemId="2" className="item2">
               <MDBView>
-                <img
-                  className="d-block w-100"
-                  src={SCHome}
+                {/* <img
+                  className="item2-img"
+                  src='none'
                   alt="Second slide"
-                />
+                /> */}
+                <div className="item2-img"></div>
                 <MDBMask overlay="black-strong" />
               </MDBView>
               <MDBCarouselCaption>
@@ -80,13 +85,10 @@ const ProjectCarouselPage = () => {
                 </a>
               </MDBCarouselCaption>
             </MDBCarouselItem>
-            <MDBCarouselItem itemId="3">
+            <MDBCarouselItem itemId="3" className="item3">
               <MDBView>
-                <img
-                  className="d-block w-100"
-                  src={SCProfile}
-                  alt="Third slide"
-                />
+                <div className="item3-img" alt="Third slide"></div>
+
                 <MDBMask overlay="black-strong" />
               </MDBView>
               <MDBCarouselCaption>
@@ -100,10 +102,10 @@ const ProjectCarouselPage = () => {
                 </a>
               </MDBCarouselCaption>
             </MDBCarouselItem>
-            <MDBCarouselItem itemId="4">
+            {/* <MDBCarouselItem itemId="4" className='item4'>
               <MDBView>
                 <img
-                  className="mobile-reg-asset d-block w-100"
+                  className="mobile-reg-asset"
                   src={mobileReg}
                   alt="Fourth slide"
                 />
@@ -119,7 +121,7 @@ const ProjectCarouselPage = () => {
                   https://social-coders.com/
                 </a>
               </MDBCarouselCaption>
-            </MDBCarouselItem>
+            </MDBCarouselItem> */}
           </MDBCarouselInner>
         </MDBCarousel>
       </MDBContainer>

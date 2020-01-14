@@ -7,7 +7,7 @@ import {
   MDBNavbarToggler,
   MDBCollapse,
   MDBNavItem,
-  MDBNavLink,
+  // MDBNavLink,
   MDBIcon
   // MDBContainer,
   // MDBFormInline
@@ -90,12 +90,12 @@ class NavBar extends React.Component {
                           <MDBIcon fab icon="github" size="lg" />
                         </a>
                       </li>
-                      <li className="footer-links linkedin-btn">
+                      <li className="nav-links linkedin-btn">
                         <a href="">
                           <MDBIcon fab icon="linkedin" size="lg" />
                         </a>
                       </li>
-                      <li className="footer-links tree-btn">
+                      <li className="nav-links tree-btn">
                         <a href="">
                           <MDBIcon icon="tree" size="lg" />
                         </a>
