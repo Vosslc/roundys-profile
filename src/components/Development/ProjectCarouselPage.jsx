@@ -29,17 +29,17 @@ const ProjectCarouselPage = () => {
   };
   return (
     <div id="personal-dev-img">
-      <h4 className="text-uppercase font-weight-bolder" style={font1}>
+      <h4 className="project-title text-uppercase font-weight-bolder" style={font1}>
         Projects
       </h4>
 
-      <MDBContainer>
+      <MDBContainer project-carousel>
         <MDBCarousel
           activeItem={1}
           length={4}
           showControls={true}
           showIndicators={true}
-          className="z-depth-1 project-carousel"
+          className="z-depth-1"
         >
           <MDBCarouselInner>
             <MDBCarouselItem itemId="1">

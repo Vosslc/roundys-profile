@@ -66,9 +66,7 @@ class NavBar extends React.Component {
               <MDBNavbarToggler onClick={this.onClick} />
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav style={navFont} left>
-                  {/* <MDBNavItem active>
-                    <MDBNavLink to="#">Home</MDBNavLink>
-                  </MDBNavItem> */}
+                  <div className="nav-links-font">
                   <MDBNavItem className="about-nav-btn">
                     <a href="#about"> About </a>
                   </MDBNavItem>
@@ -81,23 +79,29 @@ class NavBar extends React.Component {
                     {/* <MDBNavLink to="#">Portfolio</MDBNavLink> */}
                     <a href="#portfolio"> Portfolio </a>
                   </MDBNavItem>
+                  </div>
                 </MDBNavbarNav>
+            
                 <MDBNavbarNav right>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">
-                      <MDBIcon fab icon="github" />
-                    </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">
-                      <MDBIcon icon="tree" />
-                    </MDBNavLink>
-                  </MDBNavItem>
-                  <MDBNavItem>
-                    <MDBNavLink to="#">
-                      <MDBIcon fab icon="linkedin" />
-                    </MDBNavLink>
-                  </MDBNavItem>
+                <ul>
+                    <div className="nav-link-container">
+                      <li className="nav-links">
+                        <a href="https://github.com/Vosslc">
+                          <MDBIcon fab icon="github" size="lg" />
+                        </a>
+                      </li>
+                      <li className="footer-links linkedin-btn">
+                        <a href="">
+                          <MDBIcon fab icon="linkedin" size="lg" />
+                        </a>
+                      </li>
+                      <li className="footer-links tree-btn">
+                        <a href="">
+                          <MDBIcon icon="tree" size="lg" />
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
                 </MDBNavbarNav>
               </MDBCollapse>
             </MDBNavbar>

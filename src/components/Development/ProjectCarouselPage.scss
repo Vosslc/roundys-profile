@@ -1,31 +1,32 @@
-// $font2:
-
-// const font2 = {
-//   fontFamily: "Orbitron",
-//   fontSize: 25,
-//   color: "#FF0000"
-//   // fontWeight: 'bold'
-// };
-
-
 #personal-dev-img {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #FEF4EE;
-  .project-carousel{
+  background-color: #fef4ee;
+  .project-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    padding-bottom: 10px;
+  }
+  .project-carousel {
     width: 80vw;
     height: 75vh;
+    
   }
- 
 }
 
-
-
 @media (max-width: 768px) {
-  // .project-carousel{
-  //   width: 150px;
-  //   height: 150px;
-  // }
+  .project-carousel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
 }
 
 #test {

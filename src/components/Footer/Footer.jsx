@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  MDBCol,
-  MDBContainer,
-  MDBRow,
-  MDBFooter,
-  MDBNavItem,
-  MDBNavLink,
-  MDBIcon
-} from "mdbreact";
+import { MDBCol, MDBContainer, MDBFooter, MDBIcon } from "mdbreact";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -15,7 +7,7 @@ const Footer = () => {
     <MDBFooter
       color="elegant-color
     "
-      className="font-small pt-4 mt-4"
+      className="font-small pt-6 mt-0"
       // id="footer"
     >
       <MDBContainer fluid className="footer text-center text-md-left">
@@ -27,26 +19,26 @@ const Footer = () => {
           </p>
         </MDBCol>
         <MDBCol md="3">
-        {/* <h5 className="title">Links</h5> */}
-        <ul>
-          <div className="footer-link-container">
-            <li className="footer-links">
-              <a href="https://github.com/Vosslc">
-                <MDBIcon fab icon="github" size="2x" />
-              </a>
-            </li>
-            <li className="footer-links">
-              <a href="">
-                <MDBIcon fab icon="linkedin" size="2x" />
-              </a>
-            </li>
-            <li className="footer-links">
-              <a href="">
-                <MDBIcon icon="tree" size="2x" />
-              </a>
-            </li>
-          </div>
-        </ul>
+          {/* <h5 className="title">Links</h5> */}
+          <ul>
+            <div className="footer-link-container">
+              <li className="footer-links">
+                <a href="https://github.com/Vosslc">
+                  <MDBIcon fab icon="github" size="2x" />
+                </a>
+              </li>
+              <li className="footer-links">
+                <a href="">
+                  <MDBIcon fab icon="linkedin" size="2x" />
+                </a>
+              </li>
+              <li className="footer-links">
+                <a href="">
+                  <MDBIcon icon="tree" size="2x" />
+                </a>
+              </li>
+            </div>
+          </ul>
         </MDBCol>
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
