@@ -1,0 +1,39 @@
+// $font2:
+
+// const font2 = {
+//   fontFamily: "Orbitron",
+//   fontSize: 25,
+//   color: "#FF0000"
+//   // fontWeight: 'bold'
+// };
+
+
+#personal-dev-img {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #FEF4EE;
+  .project-carousel{
+    width: 80vw;
+    height: 50vh;
+  }
+ 
+}
+
+
+
+@media (max-width: 768px) {
+  // .project-carousel{
+  //   width: 150px;
+  //   height: 150px;
+  // }
+}
+
+#test {
+  font: rgb(255, 138, 138);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}

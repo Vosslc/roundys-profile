@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Header from "./components/Header/Header";
 import About from "./components/About/About.jsx";
 import Skills from "./components/Skills/Skills";
-import PersonalDev from "./components/Development/PersonalDev"
+import ProjectCarouselPage from "./components/Development/ProjectCarouselPage"
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <About />
       <Skills />
-      <PersonalDev />
+      <ProjectCarouselPage />
       {/* {routes} */}
     </div>
   );
