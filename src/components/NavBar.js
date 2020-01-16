@@ -67,36 +67,42 @@ class NavBar extends React.Component {
               <MDBCollapse isOpen={this.state.collapse} navbar>
                 <MDBNavbarNav style={navFont} left>
                   <div className="nav-links-font">
-                  <MDBNavItem className="about-nav-btn">
-                    <a href="#about"> About </a>
-                  </MDBNavItem>
+                    <MDBNavItem className="about-nav-btn">
+                      <a href="#about"> About </a>
+                    </MDBNavItem>
 
-                  <MDBNavItem className="skills-nav-btn">
-                    {/* <MDBNavLink to="#">Skills</MDBNavLink> */}
-                    <a href="#skills"> Skills </a>
-                  </MDBNavItem>
-                  <MDBNavItem className="portfolio-nav-btn">
-                    {/* <MDBNavLink to="#">Portfolio</MDBNavLink> */}
-                    <a href="#portfolio"> Portfolio </a>
-                  </MDBNavItem>
+                    <MDBNavItem className="skills-nav-btn">
+                      {/* <MDBNavLink to="#">Skills</MDBNavLink> */}
+                      <a href="#skills"> Skills </a>
+                    </MDBNavItem>
+                    <MDBNavItem className="portfolio-nav-btn">
+                      {/* <MDBNavLink to="#">Portfolio</MDBNavLink> */}
+                      <a href="#personal-dev-img"> Portfolio </a>
+                    </MDBNavItem>
                   </div>
                 </MDBNavbarNav>
-            
+
                 <MDBNavbarNav right>
-                <ul>
+                  <ul>
                     <div className="nav-link-container">
                       <li className="nav-links">
-                        <a href="https://github.com/Vosslc">
+                        <a href="https://github.com/Vosslc" target="_blank">
                           <MDBIcon fab icon="github" size="lg" />
                         </a>
                       </li>
                       <li className="nav-links linkedin-btn">
-                        <a href="">
+                        <a
+                          href="https://www.linkedin.com/in/nate-roundy/"
+                          target="_blank"
+                        >
                           <MDBIcon fab icon="linkedin" size="lg" />
                         </a>
                       </li>
                       <li className="nav-links tree-btn">
-                        <a href="">
+                        <a
+                          href="https://teamtreehouse.com/roundy"
+                          target="_blank"
+                        >
                           <MDBIcon icon="tree" size="lg" />
                         </a>
                       </li>
@@ -113,79 +119,3 @@ class NavBar extends React.Component {
 }
 
 export default NavBar;
-
-// export class NavBar extends Component {
-//   state = {};
-
-//   handleChange = (key, value) => {
-//     this.setState({ [key]: value });
-//   };
-
-//   toggleCollapse = collapseID => () =>
-//     this.setState(prevState => ({
-//       collapseID: prevState.collapseID !== collapseID ? collapseID : ""
-//     }));
-
-//   render() {
-//     const overlay = (
-//       <div
-//         // id="sidenav-overlay"
-//         // style={{ backgroundColor: "transparent" }}
-//         onClick={this.toggleCollapse("navbarCollapse")}
-//       />
-//     );
-//     return (
-//       <div id="HeaderPage">
-//         <div>
-//           <MDBNavbar dark expand="md" fixed="top">
-//             <MDBContainer>
-//               <MDBNavbarBrand>
-//                 <strong className="white-text">BrUtah</strong>
-//               </MDBNavbarBrand>
-//               <MDBNavbarToggler
-//                 onClick={this.toggleCollapse("navbarCollapse")}
-//               />
-//               <MDBCollapse
-//                 id="navbarCollapse"
-//                 isOpen={this.state.collapseID}
-//                 navbar
-//               >
-//                 <MDBNavbarNav left>
-//                   <MDBNavItem>
-//                     <MDBNavLink to="#about">Home</MDBNavLink>
-//                   </MDBNavItem>
-//                   <MDBNavItem>
-//                     <MDBNavLink to="/createpost">Create Post</MDBNavLink>
-//                   </MDBNavItem>
-//                   <MDBNavItem>
-//                     <MDBNavLink to="#!">Profile</MDBNavLink>
-//                   </MDBNavItem>
-//                   <MDBNavItem>
-//                     <MDBNavLink to="/">LogOut</MDBNavLink>
-//                   </MDBNavItem>
-//                 </MDBNavbarNav>
-//                 <MDBNavbarNav right>
-//                   <MDBNavItem>
-//                     <MDBFormInline waves>
-//                       <div className="md-form my-0">
-//                         <input
-//                           className="form-control mr-sm-2"
-//                           type="text"
-//                           placeholder="Search"
-//                           aria-label="Search"
-//                         />
-//                       </div>
-//                     </MDBFormInline>
-//                   </MDBNavItem>
-//                 </MDBNavbarNav>
-//               </MDBCollapse>
-//             </MDBContainer>
-//           </MDBNavbar>
-//           {this.state.collapseID && overlay}
-//         </div>
-//       </div>
-//     );
-//   }
-// }
-
-// export default NavBar;
