@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./NavBar.scss";
 import {
   MDBNavbar,
@@ -86,7 +86,7 @@ class NavBar extends React.Component {
                   <ul>
                     <div className="nav-link-container">
                       <li className="nav-links">
-                        <a href="https://github.com/Vosslc" target="_blank">
+                        <a href="https://github.com/Vosslc" target="_blank" rel="noopener noreferrer">
                           <MDBIcon fab icon="github" size="lg" />
                         </a>
                       </li>
@@ -94,6 +94,7 @@ class NavBar extends React.Component {
                         <a
                           href="https://www.linkedin.com/in/nate-roundy/"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <MDBIcon fab icon="linkedin" size="lg" />
                         </a>
@@ -102,6 +103,7 @@ class NavBar extends React.Component {
                         <a
                           href="https://teamtreehouse.com/roundy"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <MDBIcon icon="tree" size="lg" />
                         </a>

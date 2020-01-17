@@ -11,7 +11,7 @@ import {
 } from "mdbreact";
 // import RegSC from "./assets/SC.png";
 // import SCHome from "./assets/SCHome.jpeg";
-import SCProfile from "./assets/SCProfile.png";
+// import SCProfile from "./assets/SCProfile.png";
 // import mobileReg from "./assets/mobileReg.png";
 
 const ProjectCarouselPage = () => {
@@ -43,7 +43,7 @@ const ProjectCarouselPage = () => {
           showControls={true}
           showIndicators={true}
           className="z-depth-1"
-          className="project-carousel"
+          // className="project-carousel"
         >
           <MDBCarouselInner>
             <MDBCarouselItem itemId="1" className="item1">
@@ -58,6 +58,7 @@ const ProjectCarouselPage = () => {
                   style={font2}
                   href="https://social-coders.com/#/Register"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://social-coders.com/
                 </a>
@@ -80,6 +81,7 @@ const ProjectCarouselPage = () => {
                   style={font2}
                   href="https://social-coders.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://social-coders.com/
                 </a>
@@ -97,6 +99,7 @@ const ProjectCarouselPage = () => {
                   style={font2}
                   href="https://social-coders.com/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   https://social-coders.com/
                 </a>

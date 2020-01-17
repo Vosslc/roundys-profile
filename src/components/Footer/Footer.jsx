@@ -23,17 +23,17 @@ const Footer = () => {
           <ul>
             <div className="footer-link-container">
               <li className="footer-links">
-                <a href="https://github.com/Vosslc">
+                <a href="https://github.com/Vosslc" target="_blank" rel="noopener noreferrer">
                   <MDBIcon fab icon="github" size="2x" />
                 </a>
               </li>
-              <li className="footer-links">
-                <a href="">
+              <li className="footer-links" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/nate-roundy/">
                   <MDBIcon fab icon="linkedin" size="2x" />
                 </a>
               </li>
               <li className="footer-links">
-                <a href="">
+                <a href="https://teamtreehouse.com/roundy" target="_blank" rel="noopener noreferrer">
                   <MDBIcon icon="tree" size="2x" />
                 </a>
               </li>
