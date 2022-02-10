@@ -16,7 +16,7 @@
     "massive": "^6.1.4",
     "mdbootstrap": "^4.10.1",
     "mdbreact": "^4.23.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.2",
     "postcss-loader": "^3.0.0",
     "react": "^16.12.0",
